@@ -9,3 +9,11 @@ An API is a set of definitions and protocols for building and integrating applic
 I have taught how to create api in php to fetch data from database in php pdo, REST API in PHP and PHP API CRUD. You can interact with the database with the use of the CRUD (Create Read Update Delete) via the API. This project is created from cratch.
 
 
+# Tools or Softwares Required
+1. Text Editor (VS code or Sublime text, etc) : download link: https://code.visualstudio.com/download
+2. Browser (Chrome, firefox etc.): 
+3. Xampp Server: download link: https://www.apachefriends.org/download.html
+4. Postman (for Api testing) download link: https://www.postman.com/downloads/
+
+
+# How to run this project
