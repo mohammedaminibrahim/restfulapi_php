@@ -11,18 +11,37 @@
         $sql = "SELECT * FROM customers";
         $statement = $conn->prepare($sql);
         $results = $statement->execute();
+        $rows = $statement->rowCount();
         $columns = $statement->fetchAll();
 
         //check if query runs
         if($results){
 
+            //number of rows
+            if($rows > 0) {
+                //success
+                $data = [
+                    'status' => 200,
+                    'message' => 'Customer Data Fetched Successfullly'
+                ];
+                header("HTTP/1.0 200  Customer Data Fetched Successfullly");
+
+            } else {
+                $data = [
+                    'status' => 404,
+                    'message' => 'Not Found'
+                ];
+                header("HTTP/1.0 404  Not Found");
+                
+            }
+
         } else {
             $data = [
-                'status' => 405,
-                'message' => $requestedMethod . 'Method Not Allowed'
+                'status' => 404,
+                'message' => $requestedMethod . 'Not Found'
             ];
-            header("HTTP/1.0 405 Method Not Allowed");
-            echo json_encode($data);
+            header("HTTP/1.0 404  Not Found");
+            
 
         }
     }
