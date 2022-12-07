@@ -16,4 +16,9 @@ I have taught how to create api in php to fetch data from database in php pdo, R
 4. Postman (for Api testing) download link: https://www.postman.com/downloads/
 
 
-# How to run this project
+# How to run this project (Make sure you have installed all the tools required)
+1. Download this project (Zip file)
+2. Extract this project in you htdocs folder (/c/xampp/htdocs)
+3. Create a Database and name php_api (http://localhost/phpmyadmin/)
+4. Import the sql file from the extrated folder (php_api)
+5. Open your browser and type: localhost/restfulapi_php
